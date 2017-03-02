@@ -249,7 +249,7 @@ func roundFloat(val float64, roundOn float64, places int) (newVal float64) {
 type responseRecord struct {
 	XMLName     xml.Name `xml:"Response" json:"-"`
 	IP          string   `json:"ip"`
-	GeonameId          int   `json:"geoname_id"`
+	GeonameId          uint32   `json:"geoname_id"`
 	CountryCode string   `json:"country_code"`
 	CountryName string   `json:"country_name"`
 	RegionCode  string   `json:"region_code"`
@@ -268,7 +268,7 @@ func (rr *responseRecord) String() string {
 	w.UseCRLF = true
 	w.Write([]string{
 		rr.IP,
-		strconv.Itoa(rr.GeonameId),
+		strconv.Itoa(int(rr.GeonameId)),
 		rr.CountryCode,
 		rr.CountryName,
 		rr.RegionCode,
