@@ -216,7 +216,7 @@ func (q *geoipQuery) Record(ip net.IP, lang string) *responseRecord {
 	}
 	r := &responseRecord{
 		IP:          ip.String(),
-		ID:          fmt.Printf("%+v\n", q),
+		ID:          fmt.Printf("%+v\n", q).String(),
 		CountryCode: q.Country.ISOCode,
 		CountryName: q.Country.Names[lang],
 		City:        q.City.Names[lang],
@@ -268,7 +268,7 @@ func (rr *responseRecord) String() string {
 	w.UseCRLF = true
 	w.Write([]string{
 		rr.IP,
-		fmt.Printf("%+v\n", rr),
+		fmt.Printf("%+v\n", rr).String(),
 		rr.CountryCode,
 		rr.CountryName,
 		rr.RegionCode,
