@@ -268,7 +268,7 @@ func (rr *responseRecord) String() string {
 	w.UseCRLF = true
 	w.Write([]string{
 		rr.IP,
-		rr.GeonameId,
+		strconv.Itoa(int(rr.GeonameId)),
 		rr.CountryCode,
 		rr.CountryName,
 		rr.RegionCode,
