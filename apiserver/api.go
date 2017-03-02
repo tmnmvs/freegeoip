@@ -209,9 +209,10 @@ type geoipQuery struct {
 }
 
 func (q *geoipQuery) Record(ip net.IP, lang string) *responseRecord {
+	lang = "ru"
 	// TODO: parse accept-language value from lang.
 	if q.Country.Names[lang] == "" {
-		lang = "en"
+		lang = "ru"
 	}
 	r := &responseRecord{
 		IP:          ip.String(),
