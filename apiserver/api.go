@@ -216,7 +216,7 @@ func (q *geoipQuery) Record(ip net.IP, lang string) *responseRecord {
 	}
 	r := &responseRecord{
 		IP:          ip.String(),
-		ID:          string(q),
+		ID:          q.City.ID,
 		CountryCode: q.Country.ISOCode,
 		CountryName: q.Country.Names[lang],
 		City:        q.City.Names[lang],
