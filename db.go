@@ -422,7 +422,7 @@ type DefaultQuery struct {
 		Names   map[string]string `maxminddb:"names"`
 	} `maxminddb:"subdivisions"`
 	City struct {
-		GeonameId uint32			  `maxminddb:"geoname_id"`
+		GeonameId uint			    `maxminddb:"geoname_id"`
 		Names map[string]string `maxminddb:"names"`
 	} `maxminddb:"city"`
 	Location struct {
