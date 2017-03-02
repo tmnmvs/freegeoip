@@ -20,25 +20,25 @@
 		},
 		{
 			"checksumSHA1": "bvd8LkQAIwPZND7b3vpVsPSbkqQ=",
-			"path": "github.com/fiorix/freegeoip",
+			"path": "github.com/tmnmvs/freegeoip",
 			"revision": "2dd1041b59f1341a60bdbecfc4c918a8e86f30b6",
 			"revisionTime": "2017-01-06T11:01:25Z"
 		},
 		{
 			"checksumSHA1": "3NOCRqHwvi2qGzdFJpUbuRNvp9s=",
-			"path": "github.com/fiorix/freegeoip/apiserver",
+			"path": "github.com/tmnmvs/freegeoip/apiserver",
 			"revision": "2dd1041b59f1341a60bdbecfc4c918a8e86f30b6",
 			"revisionTime": "2017-01-06T11:01:25Z"
 		},
 		{
 			"checksumSHA1": "s3x0QTPmuue1OQckgsD00CvvS4k=",
-			"path": "github.com/fiorix/freegeoip/cmd/freegeoip",
+			"path": "github.com/tmnmvs/freegeoip/cmd/freegeoip",
 			"revision": "2dd1041b59f1341a60bdbecfc4c918a8e86f30b6",
 			"revisionTime": "2017-01-06T11:01:25Z"
 		},
 		{
 			"checksumSHA1": "4aYbMnXo3kz6UgMHC5Vz79BdCaU=",
-			"path": "github.com/fiorix/go-redis/redis",
+			"path": "github.com/tmnmvs/go-redis/redis",
 			"revision": "d987058b55eb470a35e9e18169011cd44bb20cc9",
 			"revisionTime": "2016-01-04T01:03:33Z"
 		},
@@ -205,5 +205,5 @@
 			"revisionTime": "2016-12-14T18:38:57Z"
 		}
 	],
-	"rootPath": "github.com/fiorix/freegeoip"
+	"rootPath": "github.com/tmnmvs/freegeoip"
 }
