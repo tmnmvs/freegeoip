@@ -166,7 +166,7 @@ func (f *apiHandler) iplookup(writer writerFunc) http.HandlerFunc {
 		ip, q := ips[rand.Intn(len(ips))], &geoipQuery{}
 		err = f.db.Lookup(ip, &q.DefaultQuery)
 		if err != nil {
-			http.Error(w, string(err), http.StatusServiceUnavailable)
+			http.Error(w, fmt.Printf("type: %T; value: %q\n", err, err), http.StatusServiceUnavailable)
 			return
 		}
 		w.Header().Set("X-Database-Date", f.db.Date().Format(http.TimeFormat))
